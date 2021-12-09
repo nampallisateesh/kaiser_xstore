@@ -66,7 +66,7 @@ pipeline {
         }
         
         
-   stage('Build & Copy Installer') {
+   /*stage('Build & Copy Installer') {
             steps {
 			  sh 'rm -rf installer'  
 			  copyArtifacts filter: 'blick/distro-full/OracleRetailXstorePointofService*.zip', fingerprintArtifacts: true, flatten: true, projectName: 'BLICK_XUNIT_XSTORE', selector: specific("${params.XSTORE_BUILD_NUMBER}"), target: 'installer'
@@ -172,7 +172,7 @@ pipeline {
                 }
             }
            
-        }
+        }*/
  
         
 	}
